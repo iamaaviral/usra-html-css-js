@@ -1,0 +1,140 @@
+
+* {
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+body {
+    background-color: lightpink;
+    margin: 0px;
+}
+header {
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+    height: 60px;
+}
+.banner {
+    position: relative;
+    height: 150px;
+    /* width: 50%; */
+    border-radius: 10px;
+    padding: 6px;
+    background-color: rgba(255,255,255, 0.3);
+    /* margin: 0 auto 6px auto; */
+}
+.banner p {
+    font-size: 24px;
+}
+
+.para {
+    display: inline-block;
+    background-color: blue;
+    height: 100px;
+    width: 45%;
+    border: 1px solid green;
+    margin: 100px 10px 10px 5px;
+    padding: 10px 5px 10px 5px;
+}
+.banner .btn {
+    background-color: pink;
+    border: 1px solid red;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+}
+
+.banner1, .banner2, .banner3, .banner4 {
+    background-color: rgba(255,255,255, 0.3);
+    border: 1px solid red;
+    overflow: auto;
+}
+
+.container {
+    height: calc(100vh - 60px);
+    /* flex-wrap: wrap; */
+    border: 1px solid green;
+    position: relative;
+  
+}
+.banner1 {
+    height: 100%;
+    background-color: turquoise;
+    font-size: 24px;
+    /* padding-right: 30px; */
+    /* flex-grow: 0; */
+}
+
+.name {
+    font-size: 0px;
+}
+
+/* @media (width <= 120px) {
+    body {  
+        background-color: aqua;
+    }
+    .container {
+        display: none;
+}
+}
+@media (min-width: 120px) and (max-width: 480px) {
+    body {  
+        background-color: aqua;
+    }
+    .banner1 {
+        display: none;
+}
+}
+/* @media (120px <= width <= 480px) {
+        body {  
+            background-color: aqua;
+        }
+        .banner1 {
+            display: none;
+    }
+} */
+
+    @media (481px <= width <= 768px) {
+        body {  
+            background-color: bisque;
+        }
+        .banner1 {
+            border: 2px solid green
+        }
+    }
+
+    @media (768px <= width ) {
+        body {  
+            background-color: aquamarine;
+        }
+        .banner1 {
+            border: 5px solid green
+        }
+    }
+
+
+/* .banner1 .name {
+    background-color: blueviolet;
+} */
+
+
+ h2 + .heading {
+    background-color: blueviolet;
+}
+
+
+/* 100
+10
+1 */
+
+/* .banner2 {
+    border: 1px solid green;
+}
+.btn-primary {
+    border: 1px solid red !important;
+}
+div.banner2 {
+    width: 50vw;
+    border: 1px solid red
+ } */
