@@ -168,29 +168,31 @@
 
 //FUNCTION EXPRESSIONS
 // var calculateString;
-// calculateString = 5;
+//  calculateString = function (x) {
+//      console.log('Hi my name is' + x)
+//  };
 
 
 
-function calculateString (fn1) {
-    // console.log(qwertyuiop);
-    // qwertyuiop();
-    // console.log(fn1)
-    return fn1
-    // console.log('Hi my name is')
-} 
+// function calculateString (fn1) {
+//     // console.log(qwertyuiop);
+//     // qwertyuiop();
+//     // console.log(fn1)
+//     return fn1
+//     // console.log('Hi my name is')
+// } 
 
-function name2() {
-    console.log("aviral")
-}
+// function name2() {
+//     console.log("aviral")
+// }
 // name2()
 
 // calculateString(name2)
 
-var result = calculateString(name2)
+// calculateString(name2) //???
 
-console.log(result)
-result()
+// console.log(result)
+// result()
 // calculateString(name2)()
 
 
@@ -249,16 +251,118 @@ result()
 //you can redeclare
 //you can redefine 
 // VAR is functional scope
+//var is hoisted
+
 
 //let
 //you can't redeclare
 // you can redefine
 // let is block scope
+// let is not hoisted
 
 //const
 //you can't redeclare
 // you can't redefine
 // const is block scope
+//const is not hoisted
 
+// alert("aviral")
+// var student = "Nitin"
+
+// console.log(student)
+// console.log(window.student)
+
+// var animal ="elephant"
+// console.log(animal)
 
 // prompt('Enter your name')
+
+
+//EXECTUION CONTEXT
+// var student = "Nilesh"
+// const student = "0"
+// function getName() {
+//     const student = "Nimisha";
+//         function getNumber() {
+//             const student = "Sneha"
+//             console.log(student)   //??
+//         }
+//    getNumber()
+// }
+
+// getName()
+
+
+//EXECTUION CONTEXT
+// Hoisting ===> 
+
+
+
+
+// console.log(student) //??error
+// console.log(student + animal)
+// function getName() {
+//     // var student = "Nimisha";
+//         function getNumber() {
+//             // var student = "Sneha"
+//             // console.log(student)   //??
+//         }
+//    getNumber()
+// }
+
+// getName()
+// let student;
+// console.log(animal)
+
+// var animal = "elephant"
+
+// console.log(student)
+// console.log(animal)
+
+// x()
+// function x() {
+//     console.log('Hi i am function declaration')
+// }
+// x()
+
+// var y;
+// // y()
+// y = function () {
+//     console.log('Hi i am function expression')
+// }
+// y();
+
+// loops and conditions
+// for(let i =0 ; i<10; i++) {
+//     console.log(i)
+// }
+
+
+
+//OPERATORS
+// + , - * / 
+
+//ASSIGNMENT OPERATOR
+// let x = 1
+
+
+//compariosn operator
+// == compares values
+// === compares values as well as data type
+// !=
+// >, < , >=, <=
+// (10>5) ? (3>2) ? console.log("this") : console.log("sdajkh") : consoe.log("no")
+// false <= true
+
+//logocal operator
+// &&, ||
+
+//searches for first false condition
+// return the last condition
+// 5<2 && 3>1 && console.log("aviral")
+
+//searches for first true condition
+// return the last one
+// ||
+// (5>10) && console.log("yess")
+
