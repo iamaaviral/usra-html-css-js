@@ -153,9 +153,13 @@
 // ------------------------------//
 //Functions are first class in javascript
 //FUNCTION DECLARATIONS
+// addTwoStrings()
 // function addTwoStrings(x) {
 //     console.log('Hi my name is' + x)
 // }
+
+// addTwoStrings()
+
 
 // console.log(addTwoStrings)
 
@@ -168,7 +172,8 @@
 
 //FUNCTION EXPRESSIONS
 // var calculateString;
-//  calculateString = function (x) {
+// calculateString()
+//  var calculateString = function (x) {
 //      console.log('Hi my name is' + x)
 //  };
 
@@ -295,8 +300,11 @@
 
 //EXECTUION CONTEXT
 // Hoisting ===> 
+// console.log(a)
 
+// let a = "aviral";
 
+// console.log(a)
 
 
 // console.log(student) //??error
@@ -365,4 +373,87 @@
 // return the last one
 // ||
 // (5>10) && console.log("yess")
+
+
+
+// ---------------------------------------new cLASS
+// var x;
+// var y;
+// var getSum;
+// console.log(x)
+// console.log(b)
+// x = 10;
+// y =20;
+
+// getSum = function() {
+//     console.log(x+y)
+// }
+
+//100lines
+// getSum(); // undefined
+
+// IIFE === immediately invoked function expression
+// var num1 = 10;
+// var num2 = 20;
+
+// var result = (function(x,y) {
+//    return x+y
+// }(num1,num2))
+
+
+// console.log(result)
+
+
+// var student  = "Nilesh";
+
+
+// 2 things
+//1. variable intialization; var name;
+///2. variable assignment; name = 13;
+
+// let student = "Nilesh"
+
+// function getAnswer() {
+//     console.log(student) //?? error
+//     student = "Shivani";
+//     console.log(student) //?? "Shivani";
+// }
+// getAnswer()
+// getAnswer()
+    // console.log(sameer)
+    // let student2; //Temporal dead zone
+    // console.log(student2) //?? error
+    // student2 = "Shivani";
+// (function() {
+//     var student;
+//     console.log(student) //undeined
+//     student = "NILESH";
+//     console.log(student) // Nilesh
+// }())
+
+
+// let car1 = "Tesla";
+
+// (function() {
+//     car3 = "volvo"
+//     console.log(car3);  //1
+//     var car2 = "Creta"
+//     car2 ="audi"
+//     console.log(car1) //2
+// }())
+
+// // console.log(car2) //3
+// console.log(car3) //4
+// // var car1 ="bmw"
+
+// // animal = "elephant"
+
+// console.log(abc)
+// let abc = 10
+
+//??
+
+// Number("23aviral") ==== > ?
+
+
 
