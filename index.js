@@ -420,10 +420,10 @@
 // }
 // getAnswer()
 // getAnswer()
-    // console.log(sameer)
-    // let student2; //Temporal dead zone
-    // console.log(student2) //?? error
-    // student2 = "Shivani";
+// console.log(sameer)
+// let student2; //Temporal dead zone
+// console.log(student2) //?? error
+// student2 = "Shivani";
 // (function() {
 //     var student;
 //     console.log(student) //undeined
@@ -455,5 +455,124 @@
 
 // Number("23aviral") ==== > ?
 
+// =========================dom(Document object modal) mainpulation===================
+
+// JS FIDDLE CODE LINK ====> https://jsfiddle.net/srivastavaaviral1/hxuon4qm/132/
+
+//Select any element // function predefined
+//add any new elemt 
+//edit any elemet
+//delete any element
+
+// document.title = "Aviral's website"
+
+//select elementby id
+
+// let quote = "Aviral's  friend said something"
 
 
+//getElementsByTagName
+//getElementsByClassName
+//getElementById
+//querySelector
+//querySelectorAll
+
+
+// document.getElementById("main-header").style.color = "red"
+// header.style.color = "red"
+
+// let li = document.querySelectorAll(".list-group-item")
+// console.log(li[0])
+
+// let student = {
+//     name: "aviral"
+// } 
+// let x1 = {} 
+// console.log(x1)
+
+// let x = new Object()
+// console.log(x)
+// let student = {
+//     name: "aviral",
+//     age: 21,
+//     getName() {
+//         console.log("aviral")
+//     },
+//     "get age": false,
+//     physicalFeature: 10,
+// }
+
+
+// student ? student.physicalFeature? console.log(student.physicalFeature.hairColor): null : null
+
+
+// student && student.physicalFeature && console.log(student.physicalFeature.hairColor)
+
+//OPTIONAL CHAINING
+// console.log(student.physicalFeature.hairColor)
+
+// console.log(Object.keys(student))
+// console.log(Object.values(student))
+// console.log(Object.entries(student))
+
+// console.log(student)
+// console.log(student["get age"])
+// console.log(student.name)
+// console.log(student.age)
+// console.log(student.physicalFeatures.hairColor)
+// student.getName()
+
+// student.isNewtonSchoolStudent = true;
+//pass by referance and pass by value
+// console.log(student)
+
+// delete(student.physicalFeatures.hairColor)
+// console.log(student)
+
+// let stduent = "Tauseef"
+
+// console.log(stduent);
+
+// student = "Sameer"
+// console.log(student)
+
+
+
+
+// let str1 = "aviral"
+
+// str1 =====> x
+// str2 ======> y
+// let str2 = str1;
+
+// console.log('1.', str1)
+// console.log('2.',str2)
+
+// str1 = ""
+
+// console.log('3.',str1)
+// console.log('4.',str2)
+
+
+// obj1 ========> x <======== obj2
+//Pass by referance
+// let obj1 = {
+//     name: "surbhi"
+// }
+
+// let obj2 = obj1;
+
+// console.log('1.', obj1)
+// console.log('2.',obj2)
+
+// obj1.name = "nilesh"
+
+// obj1 = {
+//     name: "nilesh"
+// }
+
+// console.log('3.',obj1)
+// console.log('4.',obj2)
+
+
+// can my variable name be var get stduent
