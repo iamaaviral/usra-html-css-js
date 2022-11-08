@@ -539,7 +539,7 @@
 
 
 
-// let str1 = "aviral"
+// let str1 ="aviral "
 
 // str1 =====> x
 // str2 ======> y
@@ -554,7 +554,7 @@
 // console.log('4.',str2)
 
 
-// obj1 ========> x <======== obj2
+//obj1 ========> x <======== obj2
 //Pass by referance
 // let obj1 = {
 //     name: "surbhi"
@@ -576,3 +576,129 @@
 
 
 // can my variable name be var get stduent
+
+
+// return {
+//     email: _email,
+//     password: _password
+// }
+
+
+// let obj1 = {
+//     name: "Jeel"
+// }
+
+// let obj2 = {
+//     name: "Dhanesh",
+//     age: 80,
+//     hairColor: "blue"
+// }
+
+//Object.assign
+
+// let newObj = obj1;
+// let newObject = Object.assign({}, obj2, obj1, {hasGirlfriend: false})
+//Object.assign(target, ...sources)
+
+// obj1.hairColor = "red"
+// console.log(obj1)
+// console.log(newObject)
+
+
+// spread syntax
+// let newObject = {...obj1, ...obj2, hasGirlfriend: false, hasCar: "tesla"}
+
+// console.log(newObject)
+
+
+// let obj2 = obj1;
+// let obj2 = {
+//     name: "Jeel"
+//     .
+//     .
+// }
+
+
+// const team = "India"
+
+// team = "England"
+//variavlr was made at x location
+// let obj1 =
+
+//this variable was made at y location
+// let num = 456
+
+// var worldCup =  {
+//     matches: 41,
+//     venue: "Australia",
+//     squad: {
+//         teamA: ["India", "Pakistan", "Netherland"],
+//         teamB: ["Australia", "England", "Namibia"]
+//     }
+// } 
+
+// Object.freeze(worldCup)
+// Object.freeze(worldCup.squad)
+
+// worldCup.squad.teamA = ["India", "Pakistan", "Bangladesh"]
+// console.log(worldCup)
+
+// worldCup = {
+//     djhkf
+// }
+// worldCup = num
+
+//ARRAYYYYYYYYYYYYYYYYYYYYYYSSSSSSS
+
+// let obj = {
+//     name: "tausheef",
+//     age: 99
+// }
+
+// obj.school = "TPPS"
+// delete obj.name
+// console.log(obj)
+// console.log(Object.keys(obj).length)
+
+// let arr = [1,2,3,3,54, "Tausheef", false];
+
+// console.log(arr[2])
+// let arr1 = arr;
+
+// arr[0] = "Aakash"
+// 
+// console.log(arr1)
+
+
+// arr[7] = "Shivani"
+// arr.push("Shivani")
+// arr.push("Shivani")
+// arr.pop()
+// arr.pop()
+// arr.pop()
+
+//SEE IT YOURSELF
+//shift
+//unshift
+
+// delete arr[4];
+// console.log(arr[4])
+// console.log(arr.length)
+
+//splice ====> can do everything. insert, remove or replace
+// splice returns the array of removed elements
+//arr.splice(index, number of elemets, ...extra elents)
+// let newFruits = ["papaya", "kiwi"]
+// var fruits = ["apple", "banana", "grapes", "mango", "litchi"]
+
+// var result = fruits.splice(0,0, ...newFruits)
+// console.log(result)
+// console.log(fruits)
+// console.log(fruits.length)
+
+
+//slice
+
+
+
+
