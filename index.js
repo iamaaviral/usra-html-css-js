@@ -698,6 +698,108 @@
 
 
 //slice
+// var arr = [1,52,76,89]
+// var result1 = arr.slice(0,1)
+// result1
+// // [1]
+// arr
+// (4) [1, 52, 76, 89]
+// var result2 = arr.splice(0,1)
+// result2
+// // [1]
+// arr
+// (3) [52, 76, 89]
+//  arr.splice(0,1)
+// // [52]
+
+
+// for loop;
+
+// var arr = [11,22,33,44,55,66,77]
+
+// let result = [];
+// for(let i=0; i<arr.length; i++) {
+//         console.log(arr[i], i)
+// }
+// console.log(result)
+
+// MAP
+
+// function mapFn(element, index) {
+//     console.log(element, index)
+// }
+
+// let result1 = arr.map(function(element, index) {
+//        if(element % 2 === 0) {
+//             return element*2
+//        } else {
+//         return element
+//        }
+// })
+
+// [11, 44, 3]
+// console.log(arr)
+// console.log(result1)
+//Arrow function
+// arr.map((element,index) => console.log(element, index))
+//filter
+// function filterFn(element, index) {
+//     if(element%2 === 0) {
+//        return element
+//     }
+// }
+
+// let result  = [elem1,elem2m  ]
+// let result2 = arr.filter(filterFn)
+//Arrow function
+// console.log(arr.filter((element,index) => element%2 === 0))
+
+// console.log(result2)
+
+// function getName(_sameer) {
+//     return (_sameer*2)
+// }
+
+// let result3 = []
+
+// for(let i=0; i<5; i++) {
+//     var num = getName(i)
+//     result3.push(num)
+// }
+
+// console.log(result3)
+
+
+//Reverse in array
+// let arr = ["aviral", "Shivani", "Sarang", "Sameer"]
+// let arr1 = [999,334,1,234,54,12]
+
+// var result = arr1.reverse()
+// console.log(result)
+
+
+//SORTING IN JS
+// let arr = [15,27,34,69,11,22,7]
+// var result = arr.sort(function(a,b) {
+//    return b-a
+// }) //nlonN
+// var result = arr.sort((x,y) => y-x) //nlonN
+// console.log(result)
+
+
+// let arr2 = ["aviral", "Shivani", "Sarang", "Sameer"]
+// var result = arr.sort() //nlonN
+
+// Array, objects
+
+// 
+// var saying = "early to bed, early to rise"
+
+// console.log(saying.split(""))
+
+
+
+
 
 
 
