@@ -800,7 +800,150 @@
 
 
 
+// ==========Interview questions============================
 
+//I have a string
+//write a function to reverse that string????
+
+//string 
+//arrays in js are called as iterables
+
+// function reverse(s) {
+//     //write your code here
+//     // let s1 = ""
+
+//     // for(let i=s.length-1; i>=0; i--) {
+//     //     s1 = s1 + s[i]
+//     // }
+
+//     // console.log(s1)
+//     // console.log(s1.length)
+//     // console.log(s.reverse())
+//     console.log(s.split("").reverse().join(""))
+// }
+
+// console.dir([].reverse())
+// console.dir("asdas")
+// reverse("Tauseef") // feesuat
+
+//dog
+//god
+
+// act tac
+
+// [0,0,0]
+// function checkAnagrams(s1,s2) {
+//     //write code here
+//     // if(s1.length !== s2.length) return false
+//    if(s1.split("").sort().join("") ===  s2.split("").sort().join("")) {
+//     console.log("Anagram")
+//    } else {
+//         console.log("noit anagram")
+//    }
+
+// }
+
+
+// checkAnagrams("dig", "igdqwertyuio")
+// checkAnagrams("actt", "ttac")
+// checkAnagrams("actor", "tractor")
+
+
+// console.log(typeof())
+
+// let x = [2,3,5,"21312",1]
+
+// console.log(Array.isArray(x))
+
+// //flaaten an array
+// let arr = [1,2,3, [4,5], [8,9], 10,11]
+// result = [1,2,3,4,5,8,9,10,11 ]
+// // console.log(arr.flat())
+
+// [1,2,3,4,5,8,9,10,11]
+
+
+// ==========**********************============================
+
+
+// for,map, 
+
+//forEach, for in, for of
+
+
+// let arr1 = ["A", "D", "C", "Z"]
+// let result = arr1.map(function(elem) {
+//     return elem + "X"
+// })
+// console.log(result)
+// console.log(arr1)
+
+
+
+// var arr2 = ["A", "D", "C", "Z"]
+// let result2 = []
+// let result1 = arr2.forEach(function(elem) {
+//     result2.push(elem + "x")
+// })
+
+// console.log(result2)
+// console.log(result1)
+// console.log(arr2)
+
+
+
+// let obj = {}
+// obj.name = "aviral"
+// obj.age = 80
+
+// console.log(obj)
+
+// var arr2 = ["A", "D", "C", "Z"]
+// arr2.name = "aviral"
+// arr2.age = 80
+
+// arr2[10] = 100
+// arr2.push("Y")
+// console.log(arr2.age)
+
+// console.log(arr2.length)
+
+
+//Objects
+// for(let alpha in obj ) {
+//     console.log(obj[alpha])
+// }
+
+//Arrays
+// for(let alpha of obj ) {
+//     console.log(alpha)
+// }
+
+
+//Functions
+
+//function expressions
+//function decalrations
+//hoisting
+//scopes
+//iife- annonyomous
+//js as first class
+
+// console.log(String)
+//s1 is parameter
+//rest paramenter
+// function sum(s1,...arr) {
+//     console.log(s1)
+//     console.log(Array.isArray(arr))
+//     // for(let i = 0; i<x.length; i++) {
+//     //         console.log(x[i])
+//     // }
+// }
+
+// sum(90,150, 30,20, 10) // 30 is argument
+
+//Arrow function
+//curry function
 
 
 
