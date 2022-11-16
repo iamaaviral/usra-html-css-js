@@ -840,7 +840,6 @@
 //    } else {
 //         console.log("noit anagram")
 //    }
-
 // }
 
 
@@ -944,6 +943,345 @@
 
 //Arrow function
 //curry function
+
+//Anagrams?????? better way
+
+//s1 = "madama"
+//s2 = "daammm"
+
+// {
+//     m: 0,
+//     a: 1,
+//     d: 0,
+// }
+
+// function checkAnagrams(s1,s2) {
+//     if(s1.length !== s2.length) return false
+
+//     let letterCount = {};
+
+
+//     for(let letter of s1) {
+//         (letterCount[letter] === undefined) ? letterCount[letter] = 1 : letterCount[letter]++
+//     }
+
+//     for(let letter of s2) {
+//         if(letterCount[letter] === undefined || letterCount[letter] < 1) {
+//             return false
+//         }
+//         letterCount[letter]--
+//     }
+    
+//     return true
+// }
+
+// let letterCount
+// console.log(checkAnagrams("madam", "daamm"))
+// console.log(checkAnagrams("jacky", "tacky"))
+
+
+
+// function sum(...restOfTheValues) {
+//     let total = 0;
+//     // for(let value of restOfTheValues) {
+//     //     total = total + value
+//     // }
+
+//     for( let i=0; i<restOfTheValues.length; i++) {
+//         total = total + restOfTheValues[i]
+//     }
+//     console.log(total)
+// }
+
+// sum(1,2)
+// sum(1,2,3,4)
+
+// ["aviral", "Sarang"].includes("aviral")
+
+// function sum2(y) {
+//     return y
+// }
+
+// // sum2()
+// function sum1(x) {
+//     return sum2
+// }
+
+// console.log(result)
+// let result1 = result(10)
+
+
+// console.log(result1)
+// function y() {
+//     return "Tauseef"
+// }
+
+// function x() {
+//     return y
+// }
+
+// console.log(x)
+// let res = x();
+// console.log(res())
+
+// console.log(5);
+
+// let x = 5;
+// console.log(x)
+
+
+//CLOSURES =====
+
+// name ka scope was only function x
+// how am i geeting this in the scope of function y????
+// closures are a way js uses to access outer scope variable in its inner scope
+
+// scope for age variable -s function x
+// y is different scope
+
+
+
+// function x() {
+//      let name = "aviral"
+//      let age = 80;
+//      let isInstructor = false
+//      function y() {
+//         function z() {
+//                 console.log()
+//         }
+//         console.dir(z)
+//         z()
+//      }
+//     //  console.log(y)
+//     //  console.dir()
+   
+// }
+// x()
+
+
+// function x() {
+//     return function y() {
+//         return function z() {
+//             return 10
+//         }
+//     }
+// }
+
+// let result = x()()();
+// console.log(result)
+// let newResult = result()
+// console.log(newResult)
+
+// function sum(x) {
+//     let sum = x;
+//    return function resultFn(y) {
+//     if(arguments.length) {
+//         sum = sum+y;
+//         return resultFn
+//     }
+//        return  sum
+//    }
+// }
+
+// console.log(sum(10)())
+// console.log(sum(10)(20)())
+// console.log(sum(10)(20)(30)())
+// console.log(sum(10)(20)(30)(11)(16)(15)()
+
+
+// =============================================================
+
+// var student1 = {
+//     name: "Sarang",
+//     age: 65
+// }
+
+// var student2 = {
+//     name: "Sameer",
+//     age: 102
+// }
+
+// var student3 = {
+//     name: "Surbhi",
+//     age: 70
+// }
+
+//CONSTRUCTORS?????
+
+// function createStudentFactory(name, age) {
+//     return {
+//         name: name,
+//         age: age
+//     }
+// }
+// console.log(createStudentFactory("Sarang", 65))
+// console.log(createStudentFactory("Sameer", 70))[]
+
+// let obj1 = new Object()
+// let arr1 = new Array()
+// let str1 = new String("aviral")
+
+// console.log(arr1.indexOf())
+
+
+// let CreateStudentFactory = function(firstName,lastName = "", age) {
+//     this.firstName = firstName
+//     this.lastName = lastName
+//     this.age = age
+
+//     this.getFullName = function(x) {
+//         return this
+//     }
+// }
+
+// let student1 = new CreateStudentFactory("Sarang","Salame", 65)
+// let student2 = new CreateStudentFactory("Sameer", "Agarwal", 70)
+// let student3 = new CreateStudentFactory("Surbhi", "Chawla", 70)
+
+
+// let CreateStudentFactory = function(firstName,lastName = "", age) {
+//     var firstName = firstName
+//     var lastName = lastName
+//     this.firstName = firstName
+// }
+
+// let student1 = new CreateStudentFactory("Sarang","Salame", 65)
+
+// console.log(student1)
+
+
+// var name = ""
+
+
+// var result = student1.getSection({})
+// console.log(student3.getFullName())
+// console.log(student1.getFullName())
+// console.log(student2.getFullName())
+
+// console.log(student3)
+
+//templete literals
+// var a = "sarang"
+// var b = "Rahman"
+
+// console.log(`my first name is ${2>3 ? a : "Sameer"} and last name is ${b}`)
+
+//what is this in js??
+//value of this is always an object
+
+// console.log(this)
+
+// let student = {
+//     name: "aviral",
+//     getName: function() {
+//         console.log(this)
+//     },
+//     characters: {
+//         color: "black",
+//         age: 90,
+//         favcAR: "ALTO",
+//         getCharacters: function() {
+//             console.log(this)
+//         }
+//     }
+
+// }
+
+// student.getName()
+// student.characters.getCharacters()
+
+
+// function getName() {
+//     var student = {
+//         name: "aviral"
+//     }
+
+//     return this
+// }
+
+//  console.log(getName()) //???
+
+// typeof("aviral")
+// this  === window
+
+//create a very simple calculator, sum and substract
+
+// let obj = {
+//     value: 0,
+//     add: function(x) {
+//         this.value = this.value + x
+//         return this
+//     },
+//     substract: function(x) {
+//         this.value =  this.value - x
+//         return this
+//     }
+// }
+
+// console.log(obj.add(5))
+// obj.add(5).value //5
+// obj.add(5).substract(5).add(3).substract(15).add(10).value
+// console.log( obj.add(5).substract(5).add(3).substract(15).add(10).value);
+
+// console.log(obj.add(5));
+
+// obj.substract(5).value //-5
+// obj.add(5).substract(5).add(3).value // 3
+// obj.add(5).substract(5).add(3).substract(15).add(10).value //-2
+
+
+// obj.value
+
+
+//global This
+// this inside object
+// this in constructor
+
+//this inside a function
+//call, apply, bind
+
+
+let carProps = {
+    name: "Nano",
+    color: "red",
+    getCarName() {
+        return this
+    }
+}
+
+let bikeProps = {
+    mileage: 30,
+    automatic: true
+}
+
+function car(name, age) {
+    console.log(name,age)
+    return this
+}
+
+// var result1 = car("maruti", 30)
+// var result = car.call(carProps, "maruti", 30)
+// var result =  car( "maruti", 30)
+// var result = car.apply(carProps, ["maruti", 30])
+
+
+///////////////////BIND/////////////
+
+// var newCarFunction = car.bind(carProps)
+
+// console.log(car("x", 30))
+
+// console.log(car.call(bikeProps, "x", 30))
+
+// console.log(newCarFunction("x", 30))
+// console.log(newCarFn)
+//100 lines of code
+// car.bind(carProps)("nano", 83789)
+// console.log(newCarFn("nano", 83789))
+// console.log(result) //?
+// console.log(newCarFunction("x", 30))
+// console.log(newCarFunction("x", 30))
+// console.log(newCarFunction("x", 30))
 
 
 
