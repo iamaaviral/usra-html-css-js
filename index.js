@@ -1241,23 +1241,24 @@
 //call, apply, bind
 
 
-let carProps = {
-    name: "Nano",
-    color: "red",
-    getCarName() {
-        return this
-    }
-}
+// let carProps = {
+//     name: "Nano",
+//     color: "red",
+//     getCarName() {
+//         return this
+//     }
+// }
+// carProps.getCarName()
 
-let bikeProps = {
-    mileage: 30,
-    automatic: true
-}
+// let bikeProps = {
+//     mileage: 30,
+//     automatic: true
+// }
 
-function car(name, age) {
-    console.log(name,age)
-    return this
-}
+// function car(name, age) {
+//     console.log(name,age)
+//     return this
+// }
 
 // var result1 = car("maruti", 30)
 // var result = car.call(carProps, "maruti", 30)
@@ -1284,4 +1285,160 @@ function car(name, age) {
 // console.log(newCarFunction("x", 30))
 
 
+// let obj1 = {
+//     name: "aviral"
+// }
 
+// function x() {
+//     // return this
+//     function y() {
+//         return this
+//     }
+//     y.call(obj1)
+// }
+
+
+// var newX = x.bind(obj1)
+
+// console.log(x()) //?
+
+
+//arrow fucnction ??
+
+
+// function getSum(x,y) {
+
+//     if(!x) {
+//         x = 0
+//     } 
+//     if(!y) {
+//         y = 0
+//     }
+
+//     return x+y
+// }
+
+// console.log(getSum(5, 3))
+
+
+// var getNameArrow = () => {
+    
+//     if(!x) {
+//         x = 0
+//     } 
+//     if(!y) {
+//         y = 0
+//     }
+
+//     return x+y
+// }
+
+// getNameArrow()
+
+// var arr = [1,2,4,5646,2,3413,6]
+
+
+
+// arr.filter((eachArrValue) => eachArrValue> 3)
+
+//in case of normal functions the value of this is basically the object
+//that called that function
+
+
+//in case of arrow functions this keyword is basically the  
+//object that defined the arrow function
+
+// var _email = "xyz.name.com"
+
+// console.log(window._email)
+
+// function x() {
+//     return this
+// }
+
+
+// console.log(x())
+
+// let obj2 = {
+//     name: "Sameer",
+//     age: 90
+// }
+
+// let obj1 = {
+//     name: "aviral",
+//     age: 80,
+//     getName: function() {
+//         return this
+//     },
+//     getAge: () => this
+// }
+
+// console.log(obj1.getAge.call(obj2))
+
+// console.log(obj1.getName())
+
+// console.log(obj1.getAge())
+
+
+
+// function MyCar (color, brand, convertable) {
+//     this.brand = brand
+//     this.convertable = convertable
+//     this.getBrand = function() {
+//         return this.brand
+//     }
+//     var color = color
+//     // var = function() {
+//     //         return getConvertable convertable
+//     // }
+// }
+
+// var arr2 = []
+// arr2.length
+// 
+// console.log(car1.getBrand())
+// console.log(car1.getConvertable())
+
+// var arr2 = new MyArray([10,121,21,45,12,12])
+
+// console.log(arr1.getLength())
+// console.log(arr2.getLength())
+
+// var car1 = new MyCar("red", "tata", false)
+// console.log(car1.getConvertable())
+
+//PROTYPE
+
+// MyCar.prototype.getConvertable = function() {
+//     return "Hi i am convertable"
+// }
+
+// var car1 = new MyCar("red", "tata", false)
+// console.log(car1.getBrand())
+// console.log(car1.getConvertable())
+
+// Array.prototype.getMyName = function() {
+//     console.log(this)
+//     // return "aviral"
+// }
+
+// [ [prototype]] =====> __proto__
+// var arr = [1,2,3,4];
+// var arr2 = [21312,13123,24235,346,45]
+// console.log(arr)
+// console.dir(arr.__proto__)
+// console.dir(arr.__proto__.__proto__)
+// console.dir(arr.__proto__.__proto__.__proto__)
+
+// console.log(arr2.getMyName())
+// console.log(arr.valueOf())
+//what so ever you create using protoype
+//gets vreated in constructors proto
+// Array.prototype.map = function() {
+   
+//     return "aviral"
+// }
+
+// console.dir(arr.getMyName())
+// console.log(arr.length)
+// console.log(arr.getMyName())
