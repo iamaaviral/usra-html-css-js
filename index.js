@@ -1370,7 +1370,9 @@
 //     getName: function() {
 //         return this
 //     },
-//     getAge: () => this
+//     getAge: function() {
+//         return this
+//     }
 // }
 
 // console.log(obj1.getAge.call(obj2))
@@ -1424,21 +1426,124 @@
 
 // [ [prototype]] =====> __proto__
 // var arr = [1,2,3,4];
-// var arr2 = [21312,13123,24235,346,45]
-// console.log(arr)
+// var arr = [21312,13123,24235,346,45]
+// arr.__proto__= null
+// var obj = {
+//     name: "aviral"
+// }
+
+// obj.__proto__ = null
+
+// console.dir(Object.keys(obj))
+// console.log(typeof(arr))
 // console.dir(arr.__proto__)
 // console.dir(arr.__proto__.__proto__)
 // console.dir(arr.__proto__.__proto__.__proto__)
+// console.dir(arr.__proto__.__proto__.__proto__.__proto__)
 
 // console.log(arr2.getMyName())
 // console.log(arr.valueOf())
 //what so ever you create using protoype
 //gets vreated in constructors proto
 // Array.prototype.map = function() {
-   
 //     return "aviral"
 // }
-
 // console.dir(arr.getMyName())
 // console.log(arr.length)
 // console.log(arr.getMyName())
+
+//map??? 
+//polyfill??
+
+//function fn(eme, index) {
+
+// }
+
+// [1,2,3,4,5].map((element, index) => element*2)
+// var x= function() {}
+
+// Array.prototype.newMap = function(_fn) {
+//     let passedArray = this
+//     let result = [];
+//     for(let i=0 ; i<passedArray.length; i++) {
+//           let newArrayElement = _fn(passedArray[i])
+//           result.push(newArrayElement)
+//     }
+//     return result
+// }
+
+
+
+// var arr1 = [1,2,3,4,5,6]
+
+// var arr2 = [123,3243,5456,5867,231]
+// console.log(arr1.newMap((elem) => elem *2))
+
+// console.log(arr2.newMap((elem) => elem*3))
+
+
+// var x = arr1.newMap(function(element) {
+//     return  element/2
+// })
+
+// console.log(x)
+
+// String.prototype.newLength = function() {
+//         return this.length + 1
+// }
+
+
+// var name1 = "aviral"
+// var name2 = "venketash prasahd yadav"
+// console.log(name2.newLength())
+
+// ==================================================
+
+// Arrow function 
+
+//in case of normal functions the value of this is basically the object
+//that called that function
+
+//in case of arrow functions this keyword is basically the  
+//object that defined the arrow function
+
+// console.log(this)
+// console.log(window.speed)
+// var bus = {
+//     speed: 150
+// }
+
+//
+// var car = {
+//     speed: 100,
+//     // parts: {
+//     //     wheels: "mrf",
+//     //     body: "steel",
+//     //     getSpeedLimit: function() {
+//     //         console.log(this)
+//     //         console.log(this.speed)
+//     //     }
+//     // },
+//     // getSpeed: () => {
+//     //      console.log(this)
+//     //     // console.log(this.speed)
+//     // }
+
+//     // getSpeed: function () {
+//     //     // console.log(this);
+
+//     // }
+//     // getSpeedLimit: () => {
+//     //     console.log(this)
+//     // }
+// }
+
+// car.getSpeedLimit()
+
+// function displayName() {
+//     console.log(name1)
+//     console.log(this)
+// }
+//REDUCEEEE
+
+// ===========================THIS================
