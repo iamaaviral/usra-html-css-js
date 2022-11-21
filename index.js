@@ -1513,32 +1513,31 @@
 //     speed: 150
 // }
 
-//
+// var bus = {
+//     name: "Rajesh travels"
+// }
 // var car = {
 //     speed: 100,
-//     // parts: {
-//     //     wheels: "mrf",
-//     //     body: "steel",
-//     //     getSpeedLimit: function() {
-//     //         console.log(this)
-//     //         console.log(this.speed)
-//     //     }
-//     // },
-//     // getSpeed: () => {
-//     //      console.log(this)
-//     //     // console.log(this.speed)
-//     // }
-
-//     // getSpeed: function () {
-//     //     // console.log(this);
-
-//     // }
-//     // getSpeedLimit: () => {
-//     //     console.log(this)
-//     // }
+//     parts: {
+//         wheels: "mrf",
+//         body: "steel",
+//         getSpeedLimit: function() {
+//             console.log(this)
+//             // console.log(this.speed)
+//         }
+//     },
+//     getSpeed: (x) => {
+//          console.log(this)
+//         // console.log(this.speed)
+//     },
+//     getSpeedLimit() {
+//         console.log(this) //?
+//     }
 // }
+// //blaock scope ===> if, while, do while, for loop, functionscope
+// car.parts.getSpeedLimit()
+// car.getSpeed(null)
 
-// car.getSpeedLimit()
 
 // function displayName() {
 //     console.log(name1)
@@ -1547,3 +1546,194 @@
 //REDUCEEEE
 
 // ===========================THIS================
+//Bitwise operator
+//garbage collection
+
+
+//=========================???????=======================
+
+//everything is pure js....
+//dom bom... js with html and css
+
+
+// this in normal fn????
+// call bind apply
+// let aviralRoom = {
+//     table: "aviral table"
+// }
+
+// let mainRoom = {
+//     table: "main table"
+// }
+// //this ==
+// function cleanTable(item) {
+//     console.log(this) //?
+
+//     // function innerFn() {
+//     //     // console.log(this)
+//     //     console.log(`I am cleaning ${valueOfThis.table} using ${item}` ) //?
+//     // }
+
+//      let innerFn = () => {
+//         // console.log(this)
+//         console.log(`I am cleaning ${this.table} using ${item}` ) //?
+//     }
+//     innerFn()
+// }
+
+// cleanTable("soap")
+
+
+// let cleanTable = (...x)  => {
+//     console.log(arguments[0])
+// }
+
+// cleanTable("100", "200", "300")
+
+// function MyCar (color, brand, convertable) {
+//     this.brand = brand
+//     this.convertable = convertable
+//     this.getBrand = function() {
+//         return this.brand
+//     }
+//      this.color = color
+//     // var = function() {
+//     //         return getConvertable convertable
+//     // }
+// }
+
+// MyCar.prototype.getConvertable = function() {
+//     console.log(this)
+// }
+
+// let cr1 = new MyCar("red", "tata", true)
+// let cr2 = new MyCar("blue", "maruti", false)
+
+// cr1.getConvertable()
+// cr2.getConvertable()
+
+
+// ============================CLASSESSSS==================
+
+// function Male(occupation, hobby) {
+//     this.occupation = occupation;
+//     this.hobby = hobby
+// }
+
+// let sarang = new Male('developer', 'sleep')
+// console.log(sarang)
+// function Person(name, age, hairColor) {
+//     this.name = name;
+//     this.age = age;
+//     this.hairColor = hairColor
+// }
+
+// Person.prototype.sayName = function() {
+//     console.log(`my name is ${this.name}`)
+// }
+
+
+
+
+// function Male(occupation, hobby, name, age, hairColor) {
+//         Person.call(this,name, age, hairColor )
+//         this.occupation = occupation;
+//         this.hobby = hobby
+// }
+
+// let nilesh = new Male('developer', 'sleep', 'nilesh', 90, 'green')
+// // console.log(nilesh.sayName())
+
+
+// //attach methods also
+// Male.prototype = Object.create(Person.prototype);
+// let dhanesh = new Male('gamer', 'playing', 'dhanesh', 7, 'black')
+// console.log(dhanesh.sayName())
+
+
+//es6 came 2015
+
+//classes
+
+
+// class Person {
+//     constructor(name, age,hairColor ) {
+//     this.name = name;
+//     this.age = age;
+//     this.hairColor = hairColor
+//     }
+//     sayName() {
+//         console.log(`my name is ${this.name}`)
+//     }
+// }
+// let nilesh = new Person('nilesh', 90, 'green')
+
+// // console.log(nilesh.sayName())
+
+
+// class Male extends Person{
+//     constructor(name,age,hairColor, occupation, hobby) {
+//         super(name,age,hairColor)
+//         this.occupation = occupation
+//         this.hobby = hobby
+//     }
+// }
+
+
+// ==============================????????=====================
+
+
+// JS IS SINGLE THREADED LANGUAGE?????
+// function AbortController() {
+//     //
+// }
+
+
+// function xyz() {
+//     //thousand line of code
+// return 
+// }
+
+// xyz();
+
+// AbortController();
+
+
+
+//api calls
+// asyc js
+// var x = 
+
+// console.log('aviral')
+
+// alert('in between')
+
+// console.log('Sameer')
+
+// var person;
+
+//api call to age person data
+
+// person = {age: 40}
+
+// console.log(person.age)
+//async js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
