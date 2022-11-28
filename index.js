@@ -1797,22 +1797,28 @@
 // console.log("1");
 
 // setTimeout(() => {
-//     console.log("6")
-// }, 5000)
+//     console.log("7")
+// }, 1000)
 
 // setTimeout(() => {
-//     console.log("5")
-// }, 2000)
+//     console.log("6")
+// }, 0)
+
+// // setTimeout(() => {
+// //     console.log("5")
+// // }, 2000)
 
 
 // function x() {
 //     console.log("2")
-//     console.log("3")
-//     console.log("4")
 // }
 // x()
+// function y() {
+//     console.log("3")
+// }
+// y()
 
-
+//12346
 // console.log("1.");
 
 // function x() {
@@ -1827,6 +1833,7 @@
 
 //////////////////////////////////////////////////
 // console.log("1")
+
 // function x() {
 //     console.log("2")
 //     function y() {
@@ -1834,6 +1841,7 @@
 //     }
 //     y()
 // }
+
 // x()
 // console.log("4")
 
@@ -1847,4 +1855,422 @@
 // }
 // x()
 
-/////////////
+/////////////Async programing////////////////
+//api's
+//setTimeout
+//setInterval
+
+
+
+
+//what is api???? waiter example
+
+// backend gives you a url
+//JSON format ===== Javascript object notation
+// let text = '{ "employees" : "aviral", "age": "50"}'
+
+// let obj = {
+//     name: "aviral",
+//     age: 50,
+//     students: ["tauseef", "Sameer", "Nimisha"]
+// }
+
+// console.log(obj)
+
+// console.log(JSON.stringify(obj))
+// var backendValue = JSON.stringify(obj)
+
+// console.log(JSON.parse({"name": "aviral"}))
+
+
+//stringify ===> converts javascriptinto json
+//parse =====> converts json into javascript
+
+
+
+// console.log("1")
+// console.log("2")
+
+// console.log("3")
+
+
+// console.log("4")
+
+// //you wanter a data
+// //you wanter to use that data
+// var x = //data from backedn;
+// var result = x +  10
+
+
+// console.log("5")
+// console.log("6")
+//callback fn?????????? ====> a callback fn is a function passed as an 
+//argument into another function
+
+
+
+// console.log("1")
+// console.log("2")
+
+// console.log("3")
+
+
+// console.log("4")
+
+// //you wanter a data
+// //you wanter to use that data
+// var x = //data from backedn;
+// var result = x +  10
+
+// function multiplier(x) {
+//         console.log(x*5)
+// }
+
+
+// function calculate(varad) {
+//     varad(5)
+// }
+
+// calculate(multiplier)
+
+// console.log("5")
+// console.log("6")
+// multiplier(result)
+
+
+
+//callback method
+//promises
+//async await
+
+//  function third(x) {
+//     console.log('this is third')
+//     x(fifth)
+//    }
+   
+//    function four(y) {
+//     console.log('this is fourth')
+//     y(sixth)
+//   }
+
+//    function fifth(z) {
+//     console.log('this is FIFTH')
+//     z()
+//   }
+  
+//    function sixth() {
+//     console.log('this is sixth')
+//   }
+
+//   console.log('this is first')
+//   console.log('this is second')
+//   third(four)
+//   console.log('this is seventh')
+
+
+//   function third(four) {
+//    setTimeout(function() {
+//      console.log('this is third')
+//      four(fifth) //function four is being called
+//     }, 4000)
+//    }
+   
+
+//    function four(y) {
+//    setTimeout(function() {
+//   console.log('this is fourth')
+//     y(sixth)    
+//    }, 2000)
+//   }
+
+//    function fifth(z) {
+//    setTimeout(function() {
+//         console.log('this is FIFTH')
+//         z() // calling function6th
+//        }, 1000)
+//   }
+  
+//    function sixth() {
+//    setTimeout(function() {
+//     console.log('this is sixth')
+//     }, 500)
+//   } 
+
+//   console.log('this is first')
+//   console.log('this is second')
+//   third(four)
+//   console.log('this is seventh')
+
+
+//CALLBCK HELL
+
+
+//PROMISES === 2015.
+
+// var result = fetch('https://jsonplaceholder.typicode.com/todos/1')
+//   .then((response) => response.json())
+//   .then((data) => console.log(data));
+
+// console.log(result)
+//PROMISES
+//new promise
+// resolve
+//reject
+
+//resolves =====> fulfilled
+//reject ===> rejected
+
+
+// function third() {
+//     return new Promise((res, rej) => {
+//        if(7>6) {
+//            rej({name: "aviral"})
+//        } else {
+//            res({age: 50})
+//        }
+//     })
+// }
+// third()
+//     .then(x => console.log(x.age))
+//     .catch(err => console.log(err))
+
+///////////////////////////////////////////////////////
+
+//     function third() {
+//         return new Promise((res, rej) => {
+//             setTimeout(function() {
+//                     rej('this is third')
+//             }, 4000)
+//         })
+//     }
+    
+//     function four() {
+//         return new Promise((res, rej) => {
+//             setTimeout(function() {
+//                     rej('this is fourth')
+//             }, 500)
+//         })
+//     }
+
+//     function five() {
+//         return new Promise((res, rej) => {
+//             setTimeout(function() {
+//                     rej('this is five')
+//             }, 1000)
+//         })
+//     }
+
+//   console.log('this is first')
+//   console.log('this is second')
+//   third()
+//     .then(x => {
+//         console.log(x)
+//         four()
+//             .then(y=> {
+//                 console.log(y)
+//                 five()
+//                     .then(e => console.log(e))
+//                     .catch(err=> console.log(err))
+//             })
+//             .catch(err=> console.log(err))
+//     })
+//     .catch(nimisha => console.log(nimisha))
+
+// Promise.any([third(), four(), five()])
+//     .then(e => console.log(e))
+
+
+///////////////////////////////////////////////////////////
+
+//js line by line ===== async-await
+
+
+// function third() {
+//     return new Promise((resolve, reject) => {
+//             setTimeout(function() {
+//                 resolve('this is third')
+//              }, 4000)
+//     })
+// }
+
+//     function four() {
+//         return new Promise((res, rej) => {
+//             setTimeout(function() {
+//                     rej('this is fourth error')
+//             }, 2000)
+//         })
+//     }
+
+//     async function init() {
+//         try {
+//             console.log('this is first')
+//             var result1 = await third()
+//             console.log(result1)
+//             console.log('this is second')
+//             let result2 = await four()
+//             console.log(result2)
+//         } catch(err) {
+//            alert("Couldn't submit form, please retry")
+//         }
+//     }
+//     init()
+
+
+// 1> console.log(typeof undefined,typeof null)
+
+// var b = 1;
+   
+// function outer() {
+//     var b =2
+//     function inner() {
+//       b++
+//       console.log(b) //
+//        b =4;
+//        console.log(b) //
+//     }
+//     inner()
+//      }
+
+// outer(); 
+
+
+// let a = false
+// console.log(' 1')
+
+// setTimeout(() => {
+//     console.log(' 2')
+//      a = false;
+//    }, 2000);
+
+// while (a) {
+//   console.log(' 3')
+//     console.log("Hello");
+// } 
+
+// let variable = 10;
+  
+// (function (x) {
+//     var variable
+//   console.log(variable);  //1 ===10
+//   variable = 20;
+//  console.log(variable);  //2 ==== 20
+// })("aviral");
+
+//  console.log(variable); //3 ==== 20
+// var i = 3 ==== x memory
+// var i = 3 ======> x memory
+// var i = 3 =======> x meomry
+
+// var i = 2  ======> x memory
+
+// var i = 3 ====> x memory
+
+// scope
+// async code
+// let i = 0 ======> x memory
+// let i = 1 ========+> y memory
+//let i= 2     =========> z memory
+//let i = 3 ==========> alpha meory
+
+// for (var i = 0; i < 3; ++i) {
+//     console.log(i)
+//     setTimeout(() => {
+//       console.log(i); // What is logged?
+//     },0);
+// }
+
+// var i = 3
+
+// if(true) {
+//     var i = 0;
+//     console.log(i)
+// }
+
+// if(true) {
+//     var i = 1;
+//     console.log(i)
+// }
+
+// console.log(i)
+
+// let i = 3
+// if(true) {
+//     let i = 0;
+//     console.log(i)
+// }
+// if(true) {
+//     let i = 1;
+//     console.log(i)
+// }
+// console.log(i)
+
+////////////////////////////////////
+
+// aync-defer??????
+
+
+// console.log("1")
+
+// setTimeout(() => console.log("2"), 0)
+
+// console.log("5")
+
+
+// console.log("1");
+
+// setTimeout(function () {
+//     console.log("2");
+// }, 10000);
+
+// function newFn() {
+//     setTimeout(function() {
+//         console.log("3")
+//     }, 100)
+// }
+// setTimeout(function() {
+//     console.log("4");
+//     newFn();
+// }, 5000)
+
+// console.log("5");
+
+
+// console.log("0");
+// Promise.resolve().then(
+//     function anno5() {
+//         console.log("5")
+//     } 
+// )
+// setTimeout(function anno1() {
+//     console.log("1");
+// }, 0);
+
+// setTimeout(function anno2() {
+//     console.log("2");
+// }, 0)
+
+// Promise.resolve().then(
+//     function anno3() {
+//         console.log("3")
+//     } 
+// )
+// Promise.resolve().then(
+//     function anno4() {
+//         console.log("4")
+//     } 
+// )
+// console.log("6");
+
+// microtask queue ===> [anno5,anno3, anno4]
+// macrotask queue =====> [anno1,anno2]
+// console.log(1);
+// setTimeout(() => console.log(2));
+// Promise.resolve().then(() => console.log(3));
+// Promise.resolve().then(() => setTimeout(() => console.log(4)));
+// Promise.resolve().then(() => console.log(5));
+// setTimeout(() => console.log(6));
+// console.log(7);
+
+// microtask queue ===> []
+// macrotask queue =====> []
+//??1,7 3,4,5,2,6
