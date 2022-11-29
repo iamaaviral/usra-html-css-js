@@ -2274,3 +2274,157 @@
 // microtask queue ===> []
 // macrotask queue =====> []
 //??1,7 3,4,5,2,6
+
+// let lipistick = function(color) {
+//     return function(target) {
+//         target.lips = color;
+//     }
+// };
+// @lipistick('black')
+// class Girl{}
+// console.log(Girl.lips)
+
+//ES6 /.///////////////////////////////////
+// 1. let and const
+// 2. template literals (`${use your javascript}`)
+// 3. destructuring??
+
+// let obj = {
+//     name: "aviral",
+//     age: 80,
+//     isStudent: false
+// }
+// let {name, age, isStudent} = obj
+// // console.log(name)
+// // console.log(age)
+// // console.log(isStudent)
+// obj.age = 90;
+// isStudent = true
+// // console.log(isStudent)
+// console.log(obj)
+
+// function useState(x) {
+//     console.log(`value of arameter x is ${x}`)
+//     return ["10", function changeState() {console.log("20")}]
+// }
+// let [value, fn] = useState(10)
+// console.log(fn)
+// fn() //? eror, 20, undefine
+// let arr = [1,2,3,4,5,6]
+// let [a] = arr
+// console.log(a)
+// console.log(baki)
+
+
+// 4. arrow function??
+        // > clean syntax
+        // > no this
+        // > no arugument
+
+//5. spread operator
+//6. rest parameter
+//7. default parameter
+//8. Promises
+//9. classes
+//10. Symbol
+        // class Person {
+        //     constructor(name, age, hairColor) {
+        //         this.name= name
+        //         this.age = age
+        //         this.hairColor = hairColor
+        //     }
+        //     sayName() {
+        //         console.log(`my name is ${this.name}`)
+        //     }
+        // }
+        
+    // class Male extends Person {
+    //     constructor(name, age, hairColor, occupation, hobby) {
+    //         super(name, age, hairColor)
+    //         this.occupation = occupation
+    //         this.hobby = hobby
+    //     }
+    // }
+
+    // const person1 = new Male("Sameer", 30, 'red', "Dancer", "Coding")
+    // console.log(person1.sayName())
+
+
+// ES7 == =>ASYNC/AWAIT
+
+
+// ==========================the end====================================
+//generators???
+
+// function* getNames() {
+//     let number = 1
+
+//     while(true) {
+//         yield number;
+//         number++
+//     }
+// }
+
+// const name1 = getNames() 
+
+// console.log(name1.next())
+
+// console.log(name1.next())
+
+// console.log(name1.next())
+
+////////////////////////////////////////////////////////////////////////
+// Number, string, boolean, object, undefined, Symbols
+
+// var symbolValue = Symbol("aviral")
+// var symbolValue1 = Symbol("aviral")
+
+// var name1 = Symbol("aviral")
+
+// console.log(symbolValue == symbolValue1)
+
+// const _name = Symbol()
+// const _getName = Symbol()
+
+// class Student {
+//     constructor(name) {
+//         this[_name] = name
+//     }
+//     [_getName]() {
+//         console.log(this.name)
+//     }
+// }
+
+// const st1 = new Student("Sameer")
+// console.log(st1)
+// st1.getName()
+// let id = Symbol();
+
+// let user = {
+//   name: "John",
+//   [id]: 123 // not "id": 123
+// };
+
+// console.log(user)
+
+// =======================================================================
+// getters and setters
+
+// const student = {
+//     get fullName() {
+//         return `My full Name is ${this.firstName} ${this.lastName} and his age is ${this.age}`
+//     },
+//     set fullName(value) {
+//         const splitNames = value.split(' ');
+//         this.firstName = splitNames[0]
+//         this.lastName = splitNames[1]
+//         this.age = splitNames[2]
+//     }
+// }
+
+// student.fullName = 10
+
+// console.log(student.fullName)
+
+////////////////////////////////////DOM///////////////////////////////////
+
