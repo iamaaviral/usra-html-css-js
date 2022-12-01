@@ -98,14 +98,6 @@
 //     alert('1')
 // }
 
-// function btnClicked() {
-//     alert("clicked the button")
-// }
-
-// // function keyPressed() {
-
-// // }
-
 function submitForm(e) {
     e.preventDefault()
     let li = document.createElement("li")
@@ -121,12 +113,73 @@ function submitForm(e) {
     li.appendChild(span)
     li.appendChild(btn)
     
-    console.log(li)
+    let listItem = document.getElementById("items")
+    listItem.appendChild(li)
 
+    document.getElementById("item-text").value = ""
 }
-// function onLoadFunction() {
-//     alert('1')
+
+document.getElementById("button").addEventListener("click", (e) => submitForm(e) )
+// addNumbers({event: {screenX: 45}})
+
+//event delegation
+
+// ======= event bubbling
+// ======= event capturing
+
+// function addNumbers(x,y) {
+//     console.log(x+y)
 // }
-// document.querySelector("body").addEventListener("onload", onLoadFunction)
-document.getElementById("button").addEventListener("click", submitForm)
-// console.log(bodyElement)
+// // var name = "aviral"
+
+// function e() {
+//     console.log("aviral")
+// }
+
+// let child = document.querySelector(".child");
+// child.addEventListener("click", (e) => {
+//     alert(1)
+// })
+
+
+// let main1 = document.querySelector(".main1");
+// main1.addEventListener("click", (e) => {
+//     alert(2)
+// })
+
+// let main = document.querySelector(".main");
+// main.addEventListener("click", (e) => {
+//     alert(3)
+// })
+
+
+let listWrapper = document.getElementById('items')
+
+listWrapper.addEventListener("click", deleteItem) ;
+
+function deleteItem(e) {
+    // location.reload()
+    // location.assign('www.google.com')
+    // location.href = "https://www.google.com"
+    // location.replace("https://www.google.com")
+        // if(e.target.nodeName === 'BUTTON') {
+        //     console.log(e.target)
+        //     e.target.parentNode.remove()
+        // }
+}
+
+
+
+////////////////////////////////////////BOM(BROWSER OBJECT MODEL)////////////////////////////////////////
+
+//NAVIGATOR
+// console.log(window.navigator === navigator)
+
+// console.log(navigator.appVersion)
+
+
+//LOCATION
+// console.log(location.href)
+
+// history.go(5)
+// console.log(history)

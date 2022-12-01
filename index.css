@@ -37,3 +37,33 @@ body {
     cursor: pointer;
   }
   
+
+  .main {
+    height: 100vh;
+    width: 100vw;
+    background-color: blue;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  
+  .main1 {
+    height: 50vh;
+    width: 50vw;
+    background-color: red;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  
+  .child {
+    width: 25vh;
+    font-size: 25vw;
+    background-color: yellow;
+     display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  
+  
+  
